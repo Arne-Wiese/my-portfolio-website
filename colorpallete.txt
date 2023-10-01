@@ -1,0 +1,4 @@
+Primary: #F54B64, #F78361
+Secondary: #FFD428
+Dark_Grey: #4E586E
+White: #FFFFFF

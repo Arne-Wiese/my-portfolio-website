@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Own Website</title>
+    <link rel="shortcut icon" href="images/icon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--using-FontAwesome-->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <!--emailJs-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <!--init-emailJs-->
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("3vfvD5AHBqN5H_Js5");
+        })();
+    </script>
+    <script src="js/contact.js"></script>
+    <!--Jquery-->
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <!--For Cange Bar Icon to "x"-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.toggle').click(function () {
+                $('.toggle').toggleClass('active')
+                $('nav ul').toggleClass('active-menu')
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <!--main-->
+    <section id="main">
+        <!--navigation-->
+        <nav>
+            <a href="#" class="logo">LOGO</a>
+            <div class="toggle"></div>
+            <ul class="menu">
+                <li><a href="#main" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact-form">Contact</a></li>
+            </ul>
+            <a href="#" class="lang">En</a>
+        </nav>
+        <!--name-->
+        <div class="name">
+            <!--hello-->
+            <p>Hello</p>
+            <!--name-->
+            <h1>I'm <font color="#17d1ac">Arne </font>Wiese</h1>
+            <!--details-->
+            <p class="details">
+                Welcome to my personal Website. Let's explore what
+                qualifications i have, what kind of work i have
+                done so far and services i can offer YOU.
+            </p>
+            <!--cv-btn-->
+            <a href="./documents/Lebenslauf.pdf" download="ArneWieseLebenslauf" class="cv-btn">Download Cv</a>
+        </div>
+        <!--social-->
+        <div class="social">
+            <a href="#"> <i class="fab fa-facebook-f"></i></a>
+            <a href="#"> <i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/arne_weezy?igshid=ZDdkNTZiNTM=" target="_blank"> <i
+                    class="fab fa-instagram"></i></a>
+            <a href="#"> <i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="arrow"></div>
+        <div class="bg-img">
+            <img src="" alt="model" />
+        </div>
+    </section>
+    <!--about-->
+    <section id="about">
+        <div class="about-text">
+            <h1>About Me</h1>
+            <h2>Computer Science Student</h2>
+            <p>I'm currently studying computer science at
+                CAU Kiel in the 5th semester. Besides that, I'm
+                working for an tech company.
+                On this website I'll present some projects I have
+                done so far. Some are done while internship and
+                some in my free time.
+            </p>
+            <!--btn-->
+            <button>More Details</button>
+        </div>
+        <!--about-model-img-->
+        <div class="about-model">
+            <img alt="model" />
+        </div>
+    </section>
+    <div class="divider"></div>
+    <!--services-->
+    <section id="services">
+        <!--services-heading-->
+        <div class="s-heading">
+            <h1>Services</h1>
+            <p>Here Are Some Services Which I Provide You</p>
+        </div>
+        <!--services-box-container-->
+        <div class="s-b-container">
+            <!--box-1-->
+            <div class="s-box">
+                <!--services-box-img-->
+                <div class="s-b-img">
+                    <!--type-->
+                    <div class="s-type">Front-End</div>
+                    <!--img-->
+                    <img src="images/s1.png" alt="">
+                </div>
+                <div class="s-b-text">
+                    <a href="#">Here you can write something about
+                        the technology you're promoting or whatever
+                        you want.
+                    </a>
+                </div>
+            </div>
+            <!--box-2-->
+            <div class="s-box">
+                <!--services-box-img-->
+                <div class="s-b-img">
+                    <!--type-->
+                    <div class="s-type">Data-Science</div>
+                    <!--img-->
+                    <img src="images/s2.png" alt="">
+                </div>
+                <div class="s-b-text">
+                    <a href="views/data-science.html">Here you can write something about
+                        the technology you're promoting or whatever
+                        you want.
+                    </a>
+                </div>
+            </div>
+            <!--box-3-->
+            <div class="s-box">
+                <!--services-box-img-->
+                <div class="s-b-img">
+                    <!--type-->
+                    <div class="s-type">SEO</div>
+                    <!--img-->
+                    <img src="images/s3.jpg" alt="">
+                </div>
+                <div class="s-b-text">
+                    <a href="#">Here you can write something about
+                        the technology you're promoting or whatever
+                        you want.
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="divider"></div>
+    <!--portfolio-section-->
+    <section id="portfolio">
+        <!--heading-->
+        <h1 class="p-heading">Portfolio</h1>
+        <!--portfolio-box-container-->
+        <div class="p-b-container">
+            <!--box-1-->
+            <div class="p-box">
+                <!--text-->
+                <div class="text-overlay">
+                    <h1>Writting</h1>
+                    <p>Client Project</p>
+                </div>
+                <!--img-->
+                <img src="images/w1.jpg" alt=portfolio">
+            </div>
+            <!--box-2-->
+            <div class="p-box">
+                <!--text-->
+                <div class="text-overlay">
+                    <h1>Idea</h1>
+                    <p>Client Project</p>
+                </div>
+                <!--img-->
+                <img src="images/w2.jpg" alt=portfolio">
+            </div>
+            <!--box-3-->
+            <div class="p-box">
+                <!--text-->
+                <div class="text-overlay">
+                    <h1>Music</h1>
+                    <p>Client Project</p>
+                </div>
+                <!--img-->
+                <img src="images/w3.jpg" alt=portfolio">
+            </div>
+            <!--box-4-->
+            <div class="p-box">
+                <!--text-->
+                <div class="text-overlay">
+                    <h1>Time</h1>
+                    <p>Client Project</p>
+                </div>
+                <!--img-->
+                <img src="images/w4.jpg" alt=portfolio">
+            </div>
+            <!--box-5-->
+            <div class="p-box">
+                <!--text-->
+                <div class="text-overlay">
+                    <h1>Creative</h1>
+                    <p>Client Project</p>
+                </div>
+                <!--img-->
+                <img src="images/w5.jpg" alt=portfolio">
+            </div>
+            <!--box-6-->
+            <div class="p-box">
+                <!--text-->
+                <div class="text-overlay">
+                    <h1>Book</h1>
+                    <p>Client Project</p>
+                </div>
+                <!--img-->
+                <img src="images/w6.jpg" alt=portfolio">
+            </div>
+        </div>
+    </section>
+    <!--contact-btn-->
+    <section id="contact-btn">
+        <!--heading-->
+        <h1>If You Have Any Project In Your Mind ?</h1>
+        <!--btn-->
+        <a href="#contact-form">Contact Me</a>
+    </section>
+    <!--contact-form-->
+    <section id="contact-form">
+        <form action="">
+            <!--contact-left-->
+            <div class="contact-left">
+                <!--heading-->
+                <h1 class="c-l-heading">
+                    <font style="border-bottom:3px solid #1ed98b">
+                        Writ</font>e Us
+                </h1>
+                <!--form-name-->
+                <div class="f-name">
+                    <!--name-->
+                    <font>Name</font>
+                    <!--input-->
+                    <input type="text" placeholder="Full Name" id="name">
+                </div>
+                <!--form-email-->
+                <div class="f-email">
+                    <!--email-->
+                    <font>Email</font>
+                    <!--input-->
+                    <input type="email" placeholder="Example@hmail.com" id="email">
+                </div>
+            </div>
+            <!--contact-right-->
+            <div class="contact-right">
+                <!--message-->
+                <div class="message">
+                    <font>Message</font>
+                    <textarea name="message" cols="20" row="5" placeholder="Write Message..." id="message"></textarea>
+                </div>
+                <!--submit-->
+                <button type="button" onclick="sendMail()">submit</button>
+            </div>
+        </form>
+    </section>
+
+    <div id="toast" class="toast"></div>
+    <!-- Loading circle element -->
+    <div id="loading" class="loading-circle">
+        <div class="spinner"></div>
+    </div>
+</body>
+
+</html>
